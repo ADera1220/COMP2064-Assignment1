@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client-install": "npm install --prefix portfolio",
     "start": "node server.js",
-    "server": "nodemon server.js",
+    "server": "nodemon index.js",
     "client": "npm start --prefix portfolio",
     "dev": "concurrently \"npm run server\" \"npm run portfolio\"",
     "heroku-postbuild":      "NPM_CONFIG_PRODUCTION=false npm install --prefix portfolio        && npm run build --prefix portfolio"
