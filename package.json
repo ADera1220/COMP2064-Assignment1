@@ -10,7 +10,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix portfolio",
     "dev": "concurrently \"npm run server\" \"npm run portfolio\"",
-    "heroku-postbuild":      "NPM_CONFIG_PRODUCTION=false npm install --prefix portfolio        && npm run build --prefix client"
+    "heroku-postbuild":      "NPM_CONFIG_PRODUCTION=false npm install --prefix portfolio        && npm run build --prefix portfolio"
   },
   "author": "",
   "license": "ISC",
