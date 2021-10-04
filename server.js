@@ -12,17 +12,17 @@ app.get('/', (req, res) => {
 app.use(express.static(path.join(__dirname, 'portfolio/build')));
 
 //Production mode
-if(process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'portfolio/build')));
+// if(process.env.NODE_ENV === 'production') {
+//     app.use(express.static(path.join(__dirname, 'portfolio/build')));
 
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname + '/portfolio/build/index.html'));
-    });
-}
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname, 'portfolio/build/index.html'));
+//     });
+// }
 
 //Build mode
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/portfolio/public/index.html'));
+    res.sendFile(path.join(__dirname, 'portfolio/public/index.html'));
 })
 
 //Start server
